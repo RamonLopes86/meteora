@@ -1,7 +1,7 @@
 import estiloTopo from './topo.module.css';
 import Image from 'next/image';
 import logo from '../../../public/logo-meteora.png'
-import cardapio from '../../../public/iconCardapio.png'
+import cardapio from '../../../public/iconcardapio.png'
 import React , {useEffect, useState} from 'react';
 
 
