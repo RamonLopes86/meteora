@@ -1,0 +1,171 @@
+.boxPai{
+
+    width: 100%;
+    position: relative;
+    
+   
+    
+}
+    
+   
+
+.boxImagem{
+
+    display: flex;
+    width: 100%;
+    transition: all 1s;
+    scroll-behavior: smooth;
+    overflow: hidden;
+    scroll-snap-type: x mandatory;
+
+    
+    
+}  
+
+.cardImg{
+
+    min-width: 100%;
+    position: relative;
+    height: 100%;
+}
+    
+
+.boxTx{
+
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50% , -50%);
+    color: white;
+
+}
+
+.cardImg h1{
+
+    width: 100%;
+    padding: 10px;
+    text-align: center;
+    font-size: 2.5rem;
+    text-transform: uppercase;
+  
+}
+.cardImg p{
+
+    width: 100%;
+    text-align: center;
+    font-size: 1.5rem;
+}
+
+
+
+
+
+.boxPai .imgSlide{
+
+   width: 100%;
+    scroll-snap-align: center;
+}
+
+    
+
+    
+.seta{
+
+    width: 50px;
+    height: 50px;
+    cursor: pointer;
+    position: absolute;
+    top: 45%;
+    right: 0;
+
+}
+
+.setaEsq{
+
+    width: 50px;
+    height: 50px;
+    transform: rotate(180deg);
+    position: absolute;
+    top:45%;
+    left: 0;
+    cursor: pointer;
+}
+
+.control{
+
+    display: flex;
+    flex-direction: row;
+    min-height: 10px;
+    position: absolute;
+    width: 200px;
+    height: 20px;
+    bottom: 20px;
+    left: 50%;
+    transform: translate(-50%);
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+
+}
+  
+
+
+.control .ball{
+
+    width: 20px;
+    height: 20px;
+    transition: 500ms; 
+    border: 1px solid white;
+    border-radius: 50%;
+    cursor: pointer;
+}
+
+.control .ball:hover{
+
+    background-color: white;
+    transition: 500ms; 
+}
+
+
+.ballActive{
+
+background-color: white;
+transition: 1s;
+
+}
+
+.ballInative{
+
+background-color: transparent;
+transition: 1s;
+
+}
+
+
+
+@media screen and (max-width:1200px) {
+
+    .boxTx{
+
+        top: 70%;
+    }
+
+}
+
+   
+
+
+   
+
+
+
+
+
+
+
+
+
+
+
+
+

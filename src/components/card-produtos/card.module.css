@@ -1,0 +1,185 @@
+.boxMoldura{
+
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    flex-wrap: wrap;
+    max-width: 1500px;
+    margin: 0px auto;
+    position: relative;
+}
+
+
+
+.Moldura{
+
+    width:400px;
+    border: 1px solid gray;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: space-around;
+    margin-bottom: 40px;
+    position: relative;
+  
+    
+}
+    
+   
+
+.Moldura button {
+
+    margin: 10px 10px;
+    width: fit-content;
+    border: none;
+    cursor: pointer;
+    background-color: #9353FF;
+    transition: 500ms;
+    padding: 12px;
+    text-transform: uppercase;
+}
+
+.Moldura button:hover {
+
+    
+    background-color: #6012E7;
+    transition: 500ms;
+    color: white;
+}
+
+.Moldura h1 {
+
+    padding: 10px 10px;
+    color: black;
+    text-transform: uppercase;
+}
+
+.Moldura p{
+    text-align: left;
+    padding: 10px 10px;
+    color: gray;
+}
+
+.Moldura span{
+
+    padding: 10px 10px;
+    font-size: 1.1rem;
+    font-weight: bolder;
+}
+
+    
+
+.imgCard{
+
+    width: 100%;
+    height: 489px;
+    
+}
+
+
+.boxMoldura .botao{
+
+    position: absolute;
+    bottom: 20px;
+    right: 0;
+    border: none;
+    cursor: pointer;
+    padding: 8px;
+    background-color: #8A4EF0;
+    color:white;
+    font-weight: bolder;
+    overflow: hidden;
+    border-radius: 8px;
+    box-shadow: 0px 0px 10px rgb(0, 0, 0);
+}
+    
+
+
+.boxMoldura .botao::after{
+
+    content: '';
+    display: block;
+    background-image: url(../../../public/clicker.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 25px;
+    width: 100%;
+    height:100%;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50% , -50%);
+    transition: 600ms;
+    align-content: center;
+
+    animation-name: moveMouse;
+    animation-duration: 1s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+    
+  
+}
+    
+
+
+.boxMoldura .botao:hover::after{
+
+    top: -100px;
+    transition: 900ms;
+
+
+}
+    
+
+
+.botao{
+
+    overflow: hidden;
+    width: 100px;
+
+
+    & p{
+        text-transform: uppercase;
+        font-size: 0.7rem;
+    }
+}
+
+.botao:hover{
+
+    & p{
+
+        transform: translateX(0);
+        transition-delay: 1s;
+        transition: 1s;
+        
+     
+    }
+}
+
+.botao p {
+
+    transform: translateX(-150%);
+    transition: 800ms;
+}
+
+
+
+@keyframes moveMouse {
+
+        
+        to{
+
+            background-size: 22px;
+        }
+
+}
+
+
+
+    
+
+
+
+    

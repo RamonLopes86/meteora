@@ -1,0 +1,213 @@
+.boxMaior{
+
+    background-color: black;
+    position: relative;
+    overflow: hidden;
+    
+}
+
+.menuFechado{
+
+    height:65px;
+
+   transition: all 250ms;
+}
+
+.menuAberto{
+
+    height:275px;
+    transition: all 250ms;
+}
+
+
+.boxPai{
+
+   background-color: black; 
+   color: white;
+   display: flex;
+   flex-direction: row;
+   align-items: center;
+   justify-content: space-between;
+   padding: 15px 10px;
+   overflow: hidden;
+
+}
+
+.boxPai .boxNav{
+
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap:  20px;
+}
+
+.boxPai .boxNav nav ul {
+
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 20px;
+    
+}
+   
+
+
+.boxPai .boxNav nav ul li {
+
+    
+    cursor: pointer;
+}
+
+.boxPai .boxNav nav ul li:not(li:nth-child(1)) {
+
+    
+    color: gray;
+}
+
+.boxPai .boxBusca{
+
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+}
+
+.boxPai .boxBusca input{
+
+    padding: 10px;
+    width: 100%;
+}
+
+.boxPai .boxBusca input:focus{
+
+   outline: none;
+}
+
+
+
+.boxPai .boxBusca input::placeholder{
+
+    font-size: 0.8rem;
+    
+}
+
+.boxPai .boxBusca .btnBusca{
+
+    padding: 10px 10px;
+    border: none;
+    background-color: black;
+    color: white;
+    border: 1px solid white;
+    cursor: pointer;
+    transition: all 500ms;
+    
+}
+
+.boxPai .boxBusca .btnBusca:hover{
+
+    background-color: white;
+    color: black;
+    transition: all 500ms;
+    
+    
+}
+
+.iconMenu{
+
+   
+    position: absolute;
+    width: 20px;
+    height: 30px;
+    top: 20px;
+    right: 10px;
+    cursor: pointer;
+    display: none;
+}  
+
+
+.boxEscondido nav ul li{
+
+    color: white;
+    padding: 10px;
+    cursor: pointer;
+
+}
+
+.boxEscondido .boxBuscaEscondido {
+
+    display: flex;
+    flex-direction: row;
+    gap:10px;
+    padding: 0px 10px;
+}
+
+.boxEscondido .boxBuscaEscondido input{
+
+    width: 100%;
+    padding: 10px;
+    outline: none;
+}
+
+.boxEscondido .boxBuscaEscondido button{
+
+    width: 20%;
+    padding: 10px;
+    cursor: pointer;
+    border: 1px solid white;
+    background-color: rgb(0, 0, 0);
+    color: white;
+    transition: all 500ms;
+
+
+}
+
+.boxEscondido .boxBuscaEscondido button:hover {
+
+    color:black;
+    background-color:white ;
+    transition: all 500ms;
+
+}
+
+
+
+
+@media screen and (max-width:735px) {
+
+   .boxPai .boxNav nav {
+
+        display: none;
+    }
+
+    .boxPai .boxBusca{
+
+        display: none;
+    }
+
+    .boxMaior .boxEscondido .iconMenu{
+
+        display: block;
+        animation-name: moveMenu;
+        animation-duration: 1s;
+
+    }
+    
+}
+
+
+
+
+
+@keyframes moveMenu {
+
+    from {
+
+        transform: translateX(-80vw);
+
+    }
+
+    to{
+
+     transform: translateX(0);
+
+    }
+}

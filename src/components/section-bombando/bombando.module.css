@@ -1,0 +1,14 @@
+.boxPai{
+
+    text-align: center;
+    padding: 0px 10px;
+}
+
+.boxPai h1:first-child{
+
+    padding: 50px 10px 40px 10px;
+    font-size: 2rem;
+    text-transform: uppercase;
+    color: gray;
+}
+
